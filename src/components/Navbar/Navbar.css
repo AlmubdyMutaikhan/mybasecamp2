@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    min-width: 100%;
+    display: flex;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.1) 0%,rgba(255,255,255,0.07) 10%, transparent 50%, transparent 85%,
+    rgba(255,255,255,0.1) 100%);
+    box-shadow: 0px 5px 35px rgba(255,255,255,0.1);
+    overflow: hidden;
+}
+
+.navbar-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 1px;
+    background: rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-container .navbar-logo {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 80px;
+    font-size: 27px;
+    color: white;
+}
+
+.navbar-logo .logo-icon {
+    font-size: 33px;
+    cursor: pointer;
+}
+
+.navbar-container::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background: rgb(26, 95, 199);
+}
+
+.navbar-container .nav-menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+}
+
+.menu-icon {
+    display: none;
+}
+
+.nav-menu .nav-link{
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Rampart One', cursive;
+    font-size: 25px;
+    text-shadow: 2px 2px 10px rgb(34, 243, 226);
+ 
+}
+
+@media only screen and (max-width: 960px) {
+    .navbar {
+        position: absolute;
+        display: flex;
+        height: 100vh;
+        background: transparent;
+    }
+    
+    .navbar-container::after {
+        background: transparent;
+    }
+
+    .navbar-container .main-container {
+        background: linear-gradient(to bottom, rgba(255,255,255,0.1) 0%,rgba(255,255,255,0.07) 10%, transparent 50%, transparent 85%,
+        rgba(255,255,255,0.1) 100%);
+        box-shadow: 0px 5px 35px rgba(255,255,255,0.1);
+        position: absolute;
+        width: 100%;
+        top: 0;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .menu-icon {
+        position: absolute;
+        display: block;
+        right: 5px;
+        top: 0;
+        line-height: 80px;
+        font-size: 30px;
+        color: white;
+    }
+
+    .navbar-container .main-container::after {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        background: rgb(26, 95, 199);
+    }
+    
+    .main-container .navbar-logo {
+        margin: 0;
+    }
+
+    .nav-menu-container {
+
+        position: absolute;
+        top: 80px;
+        background: #262626;
+        height: 100%;
+        width: 100%;
+    }
+
+    .nav-menu-container  .nav-menu {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        transform: translateX(-100%);
+        transition: 0.3s;
+    }       
+
+    .nav-menu.active {
+        transform: translateX(0);
+    }
+
+    .nav-menu li{
+        width: 100%;
+        text-align: center;
+        height: 80px;
+        border-bottom: 1px solid white;
+    }
+    
+    .nav-menu li .nav-link {
+        line-height: 80px;
+    }
+
+
+  
+}

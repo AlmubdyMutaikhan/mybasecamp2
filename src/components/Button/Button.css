@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --primary : white;
+}
+
+.btn {
+    font-family: 'Poppins', sans-serif;
+    padding : 8px 20px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+    border-color: var(--primary);
+}
+
+.btn--primary {
+    background: var(--primary);
+    color: #242424;
+}
+
+.btn--outline {
+    background: transparent;
+    color: white;
+    transition: 0.3s ease-in;
+}
+
+.btn--md {
+    padding: 8px 20px;
+    font-size: 20px;
+}
+
+.btn--lg {
+    padding: 12px 26px;
+    font-size: 20px;
+}
+
+.btn--sm {
+    padding: 5px 15px;
+    font-size: 15px;
+}
+
+
+.btn:hover {
+    background: white;
+    color: #262626;
+    transition: 0.25s;
+}
+
+
+@media screen and(max-width: 960px) {
+    .full-width {
+        position: absolute;
+        width: 100%;
+    }        
+}

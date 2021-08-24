@@ -31,8 +31,9 @@ video {
     position: absolute;
     bottom: 10px;
     left: 50%;
-    transform: translate(-50%, -50%);
     transition: 0.5s ease-in-out;
+    animation: fade 5s 1;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -70,7 +71,6 @@ video {
 @keyframes fade {
     0% {
         opacity: 0;
-        transform: translateY(100px);
     }  
     70% {
         opacity: 0;
@@ -78,7 +78,6 @@ video {
     }
     100% {
         opacity: 1;
-        transform: translateY(0);
     }
 } 
 
@@ -122,3 +121,20 @@ video {
         transform: translateX(0);
     }
 } 
+
+
+@media screen and (max-width:960px) {
+    video {
+        object-fit: cover;
+        width: 100%;
+        margin-left: 0;
+        overflow: hidden;
+    }
+    
+    .hero-container .desc{
+        color: white;
+        display: flex;   
+        font-size: 22px;
+    }
+   
+}

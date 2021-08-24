@@ -11,15 +11,21 @@
     outline: none;
     border-radius: 2px;
     cursor: pointer;
-    border-color: var(--primary);
+    border: 1px solid var(--primary);
 }
 
 .btn--primary {
     background: var(--primary);
     color: #242424;
 }
-
 .btn--outline {
+    background: transparent;
+    color: white;
+    transition: 0.3s ease-in;
+}
+
+.btn--outline-nb {
+    border: none;
     background: transparent;
     color: white;
     transition: 0.3s ease-in;
@@ -45,12 +51,4 @@
     background: white;
     color: #262626;
     transition: 0.25s;
-}
-
-
-@media screen and(max-width: 960px) {
-    .full-width {
-        position: absolute;
-        width: 100%;
-    }        
 }

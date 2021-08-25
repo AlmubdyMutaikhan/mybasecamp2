@@ -1,0 +1,53 @@
+.cards-container {
+    height: 120vh;
+    width: 100%;
+    background: linear-gradient(70deg, rgb(106, 188, 255), rgb(218, 238, 250), rgb(174, 206, 255));
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cards-container .cards {
+    height: 100%;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.cards .sectionTitle {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(50, 126, 240);
+}
+
+.cards-cards {
+    height: 90%;
+    width: 100%;
+    margin-top: 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+
+@media only screen and (max-width: 960px) {
+    .cards-container {
+        overflow-x: hidden;
+    }
+    .cards .cards-cards {
+        height: 80%;
+        width: 100%;
+        margin-top: 6%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+}

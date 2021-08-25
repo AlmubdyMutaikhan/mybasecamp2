@@ -16,7 +16,7 @@ const Navbar = () => {
                 <div className="navbar-container">
                     <div className="main-container">
                         <Link to="/" className="navbar-logo my-link" onClick={closeMobileMenu}>
-                            MyBaseCamp 2 <i className="fas fa-hiking logo-icon"></i>
+                            MyBaseCamp 2 <i className="fas fa-shield-alt"></i>
                         </Link>
                     </div>
 
@@ -36,7 +36,7 @@ const Navbar = () => {
                                 <Link to="/about" className="nav-link my-link" onClick={closeMobileMenu}>About</Link>
                             </li>
                             <li className="my-list">
-                                <Button buttonStyle="btn--outline-nb" buttonSize="lg" buttonLength="full" onClick={closeMobileMenu} path="/signup">Sign up</Button>
+                                <Button buttonStyle="btn--outline-nb" buttonSize="lg" buttonLength="full" type="component" onClick={closeMobileMenu} path="/signup">Sign up</Button>
                             </li>
                             
                         </ul>

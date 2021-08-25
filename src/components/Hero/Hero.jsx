@@ -19,7 +19,7 @@ const Hero = () => {
            </div>
            
            <div className="hero-btns">
-                <Button className="btns" buttonStyle="btn--outline" buttonSize="btn--lg">Discover myBaseCamp-2</Button>
+                <Button className="btns" buttonStyle="btn--outline" buttonSize="btn--lg" path="discover" type="scroll">Discover myBaseCamp-2</Button>
            </div>
           
         </div>

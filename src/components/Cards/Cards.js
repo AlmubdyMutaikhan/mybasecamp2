@@ -42,7 +42,7 @@ Sometimes if a piece of software is very feature-rich, that can be seen as a bad
                            In our blog section everyone can write, comment and like.
                         </Card>
                         <Card img="https://itcontrol.ca/wp-content/uploads/2018/08/shutterstock_706715482.jpg"
-                            title="Pleasant space for project-working"
+                            title="Project-management"
                         >
                             Good time management skills increase your productivity and help you get more done. Time management skills help you reduce stress and prioritise your time. Effective time management clarifies your goals and prioritises your most important tasks. As a result, you have more time to achieve bigger and better results.
                         </Card>

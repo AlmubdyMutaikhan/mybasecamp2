@@ -6,10 +6,10 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.blog-container .desc {
-    position: absolute;
+.blog-container .blog-desc {
     margin-top: 100px;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
@@ -22,6 +22,28 @@
     backdrop-filter: blur(20px);
 }
 
-.desc h1 {
+.blog-container .blog-desc h1 {
     padding: 20px 30px;
+}
+
+.blog-container .blogs {
+    margin-top: 20px;
+    width: 80%;
+    min-height: 80vh;
+    height: auto;
+    background: rgba(227, 238, 240, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 2rem;
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.blogs .fresh-blogs, .other-blogs {
+    height: 50%;
+    width: 90%;
+    font-family: 'Poppins', sans-serif;
 }

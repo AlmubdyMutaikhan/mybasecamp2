@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Button from '../Button/Button';
 import './Navbar.css';
-
 const { Link } = require("react-router-dom")
 
 const Navbar = () => {
@@ -30,7 +29,7 @@ const Navbar = () => {
                                 <Link to="/" className="nav-link my-link" onClick={closeMobileMenu}>Home</Link>
                             </li>
                             <li className="my-list">
-                                <Link to="/services" className="nav-link my-link" onClick={closeMobileMenu}>Servies</Link>
+                                <Link to="/services" className="nav-link my-link" onClick={closeMobileMenu}>Blog</Link>
                             </li>
                             <li className="my-list">
                                 <Link to="/about" className="nav-link my-link" onClick={closeMobileMenu}>About</Link>

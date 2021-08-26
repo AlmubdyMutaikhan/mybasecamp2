@@ -1,5 +1,5 @@
 .cards-container {
-    height: 120vh;
+    height: 200vh;
     width: 100%;
     background: linear-gradient(70deg, rgb(106, 188, 255), rgb(218, 238, 250), rgb(174, 206, 255));
     background-size: cover;
@@ -29,16 +29,23 @@
     width: 100%;
     margin-top: 6%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
 }
 
+
+.cards-cards .cards-skills, .cards-feautures {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    justify-content: space-between;
+}
 
 
 
 @media only screen and (max-width: 960px) {
     .cards-container {
         overflow-x: hidden;
+        height: 250vh;
     }
     .cards .cards-cards {
         height: 80%;
@@ -50,4 +57,12 @@
         align-items: center;
     }
     
+    .cards-cards .cards-skills, .cards-feautures {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
